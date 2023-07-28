@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-07-28T00:24:18.716Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0 (Edition std-1)" etag="ZAPoRoFPx06zHVmJ6OT2" version="21.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-28T00:27:45.696Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0 (Edition std-1)" etag="BGUzDI14YP6_7GodO0F1" version="21.6.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1283" dy="869" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1119" dy="995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -109,79 +109,6 @@
         <mxCell id="nABgr-9hpTSCNNGx4_WT-29" value="usuario.tipo&lt;br&gt;= &quot;Entrenador&quot;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="720" y="-95" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-31" value="Funcion login(?,?)&lt;br&gt;Recibe usuario y contraseña&lt;br&gt;devuelve Objeto(Usuario)" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" collapsed="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="10" y="585" width="200" height="60" as="geometry">
-            <mxRectangle x="10" y="585" width="500" height="505" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-32" value="BD" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
-          <mxGeometry x="40" y="160" width="60" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-33" target="nABgr-9hpTSCNNGx4_WT-32">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-33" value="Conectarse a&amp;nbsp;&lt;br&gt;tabla usuario&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
-          <mxGeometry x="10" y="70" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-35" target="nABgr-9hpTSCNNGx4_WT-32">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-35" target="nABgr-9hpTSCNNGx4_WT-38">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-35" value="Realizar consulta buscar en tabla si tabla.usuario =&amp;nbsp; usuario" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
-          <mxGeometry x="140" y="165" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-38" target="nABgr-9hpTSCNNGx4_WT-41">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-48" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-42">
-          <mxGeometry x="-0.2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-38" target="nABgr-9hpTSCNNGx4_WT-44">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-47" value="SI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-46">
-          <mxGeometry x="-0.2667" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-38" value="¿Se encontro&amp;nbsp;&lt;br&gt;registro?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
-          <mxGeometry x="170" y="250" width="90" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-41" value="Devolver null" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
-          <mxGeometry x="10" y="270" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-44" target="nABgr-9hpTSCNNGx4_WT-50">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-44" value="password = (Desencriptar y comprar contraseña)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
-          <mxGeometry x="290" y="270" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.433;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-50" target="nABgr-9hpTSCNNGx4_WT-41">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-52" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-51">
-          <mxGeometry x="-0.6308" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-50" target="nABgr-9hpTSCNNGx4_WT-53">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-55" value="SI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-54">
-          <mxGeometry x="-0.0909" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-50" value="¿password =&amp;nbsp;&lt;br&gt;verdadero?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
-          <mxGeometry x="150" y="380" width="90" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-53" value="Devolver Objecto(nuevo usuario(tabla.usuario,&lt;br&gt;tabla.contraseña,tabla.tipo)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
-          <mxGeometry x="284" y="400" width="196" height="90" as="geometry" />
-        </mxCell>
         <mxCell id="nABgr-9hpTSCNNGx4_WT-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nABgr-9hpTSCNNGx4_WT-26" target="nABgr-9hpTSCNNGx4_WT-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -280,9 +207,9 @@
         <mxCell id="nABgr-9hpTSCNNGx4_WT-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nABgr-9hpTSCNNGx4_WT-27" target="nABgr-9hpTSCNNGx4_WT-113">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-81" value="Base de datos" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-50" y="1280" width="120" height="30" as="geometry">
-            <mxRectangle x="-30" y="1220" width="1300" height="630" as="alternateBounds" />
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-81" value="Base de datos" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" collapsed="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2340" y="102" width="120" height="30" as="geometry">
+            <mxRectangle x="2340" y="102" width="980" height="618" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nABgr-9hpTSCNNGx4_WT-82" value="Usuario" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-81">
@@ -663,53 +590,6 @@
         <mxCell id="nABgr-9hpTSCNNGx4_WT-247" value="Mostrar mensaje&amp;nbsp;&lt;br&gt;que no s epuede&lt;br&gt;realizar su&amp;nbsp;&lt;br&gt;transaccion" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1860" y="465" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-272" value="Funcion RealizarPago(?)&lt;br&gt;Recibe Objeto(DatosTarjeta)&lt;br&gt;devuelve booleano" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" collapsed="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-30" y="700" width="200" height="60" as="geometry">
-            <mxRectangle x="-30" y="700" width="480" height="440" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-274" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-275">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="70" y="160" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-275" value="Conectarse a servidor del banco" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
-          <mxGeometry x="10" y="70" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-278" target="nABgr-9hpTSCNNGx4_WT-283">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-278" value="Verificar si tiene saldo disponible para completar la transaccion" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
-          <mxGeometry x="10" y="160" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-297" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-283" target="nABgr-9hpTSCNNGx4_WT-286">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-283" value="¿Tiene saldo disponibel?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
-          <mxGeometry x="205" y="145" width="90" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-298" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-286" target="nABgr-9hpTSCNNGx4_WT-292">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-286" value="Raelizar Pago" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
-          <mxGeometry x="190" y="280" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-292" value="Devolver Verdadero" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
-          <mxGeometry x="190" y="360" width="120" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-295" value="Devolver Falso" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
-          <mxGeometry x="350" y="90" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-294" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-283" target="nABgr-9hpTSCNNGx4_WT-295">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="490" y="80" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-296" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-294">
-          <mxGeometry x="0.1925" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="nABgr-9hpTSCNNGx4_WT-304" value="Volver a Menu de inicio" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1270" y="1210" width="120" height="60" as="geometry" />
         </mxCell>
@@ -736,41 +616,6 @@
         </mxCell>
         <mxCell id="nABgr-9hpTSCNNGx4_WT-324" value="Lista(EventosCercanos) = ObtenerEventosCercanos()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="810" y="1120" width="150" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-327" value="Funcion ObtenerEventosCercanos()&lt;br&gt;&lt;br&gt;devuelve Lista(Eventos)" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" collapsed="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-70" y="830" width="200" height="60" as="geometry">
-            <mxRectangle x="-70" y="830" width="480" height="370" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-328" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-327">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="70" y="160" as="targetPoint" />
-            <mxPoint x="70.0666666666666" y="130" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-336" value="Devolver&amp;nbsp;&lt;br&gt;ListaEventos" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
-          <mxGeometry x="350" y="280" width="120" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-341" value="ubicacion = ObtenerUbicacion();" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
-          <mxGeometry x="10" y="70" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-344" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-327" source="nABgr-9hpTSCNNGx4_WT-342" target="nABgr-9hpTSCNNGx4_WT-343">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-342" value="localidad = ubicacion.ObtenerLocalidad();" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
-          <mxGeometry x="10" y="165" width="160" height="85" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-346" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-327" source="nABgr-9hpTSCNNGx4_WT-343" target="nABgr-9hpTSCNNGx4_WT-345">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-343" value="BD" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
-          <mxGeometry x="40" y="280" width="60" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-347" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-327" source="nABgr-9hpTSCNNGx4_WT-345" target="nABgr-9hpTSCNNGx4_WT-336">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nABgr-9hpTSCNNGx4_WT-345" value="ListaEventos =&amp;nbsp;&lt;br&gt;Obtener de tabla eventos donde&amp;nbsp;&lt;br&gt;tabla.localidad = localidad" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
-          <mxGeometry x="135" y="270" width="165" height="90" as="geometry" />
         </mxCell>
         <mxCell id="nABgr-9hpTSCNNGx4_WT-349" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nABgr-9hpTSCNNGx4_WT-320" target="nABgr-9hpTSCNNGx4_WT-215">
           <mxGeometry relative="1" as="geometry" />
@@ -894,6 +739,166 @@
         </mxCell>
         <mxCell id="nABgr-9hpTSCNNGx4_WT-394" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nABgr-9hpTSCNNGx4_WT-317" target="nABgr-9hpTSCNNGx4_WT-387">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-434" value="Funciones" style="swimlane;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" collapsed="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2190" y="102" width="100" height="30" as="geometry">
+            <mxRectangle x="2190" y="102" width="1620" height="555" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-327" value="Funcion ObtenerEventosCercanos()&lt;br&gt;&lt;br&gt;devuelve Lista(Eventos)" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-434">
+          <mxGeometry x="30" y="50" width="480" height="370" as="geometry">
+            <mxRectangle x="30" y="50" width="200" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-328" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-327">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="160" as="targetPoint" />
+            <mxPoint x="70.0666666666666" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-336" value="Devolver&amp;nbsp;&lt;br&gt;ListaEventos" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
+          <mxGeometry x="350" y="280" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-341" value="ubicacion = ObtenerUbicacion();" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
+          <mxGeometry x="10" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-344" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-327" source="nABgr-9hpTSCNNGx4_WT-342" target="nABgr-9hpTSCNNGx4_WT-343">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-342" value="localidad = ubicacion.ObtenerLocalidad();" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
+          <mxGeometry x="10" y="165" width="160" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-346" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-327" source="nABgr-9hpTSCNNGx4_WT-343" target="nABgr-9hpTSCNNGx4_WT-345">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-343" value="BD" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
+          <mxGeometry x="40" y="280" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-347" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-327" source="nABgr-9hpTSCNNGx4_WT-345" target="nABgr-9hpTSCNNGx4_WT-336">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-345" value="ListaEventos =&amp;nbsp;&lt;br&gt;Obtener de tabla eventos donde&amp;nbsp;&lt;br&gt;tabla.localidad = localidad" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-327">
+          <mxGeometry x="135" y="270" width="165" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-31" value="Funcion login(?,?)&lt;br&gt;Recibe usuario y contraseña&lt;br&gt;devuelve Objeto(Usuario)" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-434">
+          <mxGeometry x="530" y="50" width="500" height="505" as="geometry">
+            <mxRectangle x="530" y="50" width="200" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-32" value="BD" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
+          <mxGeometry x="40" y="160" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-33" target="nABgr-9hpTSCNNGx4_WT-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-33" value="Conectarse a&amp;nbsp;&lt;br&gt;tabla usuario&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
+          <mxGeometry x="10" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-35" target="nABgr-9hpTSCNNGx4_WT-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-35" target="nABgr-9hpTSCNNGx4_WT-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-35" value="Realizar consulta buscar en tabla si tabla.usuario =&amp;nbsp; usuario" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
+          <mxGeometry x="140" y="165" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-38" target="nABgr-9hpTSCNNGx4_WT-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-48" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-42">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-38" target="nABgr-9hpTSCNNGx4_WT-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-47" value="SI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-46">
+          <mxGeometry x="-0.2667" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-38" value="¿Se encontro&amp;nbsp;&lt;br&gt;registro?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
+          <mxGeometry x="170" y="250" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-41" value="Devolver null" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
+          <mxGeometry x="10" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-44" target="nABgr-9hpTSCNNGx4_WT-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-44" value="password = (Desencriptar y comprar contraseña)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
+          <mxGeometry x="290" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.433;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-50" target="nABgr-9hpTSCNNGx4_WT-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-52" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-51">
+          <mxGeometry x="-0.6308" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-31" source="nABgr-9hpTSCNNGx4_WT-50" target="nABgr-9hpTSCNNGx4_WT-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-55" value="SI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-54">
+          <mxGeometry x="-0.0909" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-50" value="¿password =&amp;nbsp;&lt;br&gt;verdadero?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
+          <mxGeometry x="150" y="380" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-53" value="Devolver Objecto(nuevo usuario(tabla.usuario,&lt;br&gt;tabla.contraseña,tabla.tipo)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-31">
+          <mxGeometry x="284" y="400" width="196" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-272" value="Funcion RealizarPago(?)&lt;br&gt;Recibe Objeto(DatosTarjeta)&lt;br&gt;devuelve booleano" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-434">
+          <mxGeometry x="1050" y="50" width="480" height="440" as="geometry">
+            <mxRectangle x="1050" y="50" width="200" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-274" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-275">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-275" value="Conectarse a servidor del banco" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
+          <mxGeometry x="10" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-278" target="nABgr-9hpTSCNNGx4_WT-283">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-278" value="Verificar si tiene saldo disponible para completar la transaccion" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
+          <mxGeometry x="10" y="160" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-297" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-283" target="nABgr-9hpTSCNNGx4_WT-286">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-283" value="¿Tiene saldo disponibel?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
+          <mxGeometry x="205" y="145" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-298" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-286" target="nABgr-9hpTSCNNGx4_WT-292">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-286" value="Raelizar Pago" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
+          <mxGeometry x="190" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-292" value="Devolver Verdadero" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
+          <mxGeometry x="190" y="360" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-295" value="Devolver Falso" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="nABgr-9hpTSCNNGx4_WT-272">
+          <mxGeometry x="350" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-294" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="nABgr-9hpTSCNNGx4_WT-272" source="nABgr-9hpTSCNNGx4_WT-283" target="nABgr-9hpTSCNNGx4_WT-295">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nABgr-9hpTSCNNGx4_WT-296" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nABgr-9hpTSCNNGx4_WT-294">
+          <mxGeometry x="0.1925" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
