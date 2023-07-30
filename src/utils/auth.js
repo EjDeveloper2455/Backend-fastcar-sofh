@@ -70,6 +70,15 @@ const getUser = async (req,res) =>{
         res.status(500).send(err.message);
     }
 };
+const getUserNombre = async (req,res) =>{
+    try{
+        const connection = await getConnection();
+        const result = await connection.query("Select usuario_email as nombre from tbl_usuario");
+        res.json(result);
+    }catch(err){
+        res.status(500).send(err.message);
+    }
+};
 
 const signUp = async (req,res) =>{
     try{
@@ -167,5 +176,5 @@ const loginCliente = async(req, res) =>{
 
 
 export const methods = {
-    signUp,getUser,login,loginCliente,signUpCliente
+    signUp,getUser,login,loginCliente,signUpCliente,getUserNombre
 }

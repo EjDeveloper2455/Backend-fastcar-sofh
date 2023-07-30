@@ -3,6 +3,7 @@ import { methods as auth} from "./../utils/auth";
 const router = Router();
 
 router.get("/",auth.getUser);
+router.get("/nombre",auth.getUserNombre);
 router.get("/get",(req,res) =>{
     res.send("Salida");
 });

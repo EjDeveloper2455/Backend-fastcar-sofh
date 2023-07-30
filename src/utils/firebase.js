@@ -15,8 +15,8 @@ admin.initializeApp({
 const bucket = admin.storage().bucket();
 
 const empleadoImagen = (req,res,next) =>{
-    const {id} = req.params;
-    uploadFile(req,res,next,"imagenes/empleados/",id);
+    const {dni} = req.params;
+    uploadFile(req,res,next,"imagenes/empleados/",Date.now()+'_'+dni);
 }
 const sliderImagen = (req,res,next) =>{
     const {id} = req.params;

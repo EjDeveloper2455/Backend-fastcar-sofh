@@ -11,6 +11,8 @@ import vehiculoRoutes from './routes/vehiculo.routes';
 import sucursalRoutes from './routes/sucursal.routes';
 import computadoraRoutes from './routes/computadora.routes';
 import coberturaRoutes from './routes/cobertura.routes';
+import cargoRoutes from './routes/cargo.routes';
+import departamentoRoutes from './routes/departamento.routes';
 
 const app = express();
 
@@ -32,6 +34,8 @@ app.use("/api/sucursal/",sucursalRoutes);
 app.use("/api/vehiculo/",vehiculoRoutes);
 app.use("/api/computadora/",computadoraRoutes);
 app.use("/api/cobertura/",coberturaRoutes);
+app.use("/api/cargo/",cargoRoutes);
+app.use("/api/departamento/",departamentoRoutes);
 app.get("/api/confirm/",(req,res)=>{
     res.send("El servidor esta corriendo");
 });

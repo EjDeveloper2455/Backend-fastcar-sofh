@@ -5,7 +5,8 @@ import { methods as empleado} from "./../controllers/empleado.controller";
 const router = Router();
 
 router.get("/",empleado.getEmpleados);
-router.put("/imagen/:id",empleado.upload,firebase.empleadoImagen,empleado.update);
-router.post("/",empleado.upload,firebase.empleadoImagen,empleado.save);
+router.post("/",empleado.save);
+router.post("/user/",empleado.saveUser);
+router.put("/imagen/:dni",empleado.upload,firebase.empleadoImagen,empleado.updateFoto);
 
 export default router;
