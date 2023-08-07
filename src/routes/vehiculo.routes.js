@@ -4,8 +4,12 @@ import { methods as vehiculo} from "./../controllers/vehiculo.controller";
 
 const router = Router();
 
-router.get("/",vehiculo.getVehiculos);
+router.get("/",vehiculo.getVehiculosAlls);
+router.get("/:sucursal",vehiculo.getVehiculos);
+router.get("/modelo/:modelo",vehiculo.getVehiculosByModelo);
 router.get("/extra/:vin",vehiculo.getVehiculosExtra);
+router.get("/imagenes/:vin",vehiculo.getImagenes);
+
 router.post("/",vehiculo.saveVehiculo);
 router.post("/extra/",vehiculo.saveVehiculoExtra);
 router.post("/imagen/",vehiculo.saveImagen);

@@ -10,8 +10,10 @@ const upload = Multer.single('imagen');
 
 const getModelos = async(req,res) =>{
     try {
+        const {sucursal} = req.params;
+        console.log(sucursal);
         const connection = await getConnection();
-        const result = await connection.query("SELECT * from view_modelo;");
+        const result = await connection.query("SELECT * from view_modelo where sucursal = ?;",[sucursal]);
         res.json(result);
     } catch (error) {
         console.log(error);
@@ -21,9 +23,10 @@ const getModelos = async(req,res) =>{
 
 const saveModelo = async(req,res) => {
     try{
-        const {marca,modelo,tipo} = req.body;
+        const {sucursal,marca,modelo,tipo} = req.body;
         const connection = await getConnection();
-        const result = await connection.query("INSERT INTO `tbl_modelo` (`modelo_descripcion`, `marca_id`,`tipo_vehiculo_id`,`modelo_url_imagen`) VALUES (?, ?, ?,'default'); ",[modelo,marca,tipo]);
+        const result = await connection.query("INSERT INTO `tbl_modelo` (`sucursal_id`,`modelo_descripcion`, "+
+        "`marca_id`,`tipo_vehiculo_id`,`modelo_url_imagen`) VALUES (?, ?, ?, ?,'default'); ",[sucursal,modelo,marca,tipo]);
         if(result){
             res.send({"mensaje":"Se ha guardado exitosamente","Data":result});
         }

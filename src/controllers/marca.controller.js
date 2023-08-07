@@ -12,6 +12,18 @@ const getMarca = async(req,res) =>{
     }
 }
 
+const save = async(req,res) =>{
+    try {
+        const {nombre} = req.body;
+        const connection = await getConnection();
+        const result = await connection.query("INSERT INTO `bd_ej_soft`.`tbl_marca` (`marca_nombre`) VALUES (?);",[nombre]);
+        res.json(result);
+    } catch (error) {
+        console.log(error);
+        res.send(error);
+    }
+}
+
 export const methods = {
-    getMarca
+    getMarca,save
 }

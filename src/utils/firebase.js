@@ -31,6 +31,18 @@ const vehiculoImagen = (req,res,next) =>{
     const {vin} = req.params;
     uploadFile(req,res,next,"imagenes/vehiculos/",Date.now()+'_'+vin);
 }
+const recursosImagen = (req,res,next) =>{
+    const {nombre} = req.params;
+    uploadFile(req,res,next,"imagenes/recursos/",nombre);
+}
+const adicionalesImagen = (req,res,next) =>{
+    const {id} = req.params;
+    uploadFile(req,res,next,"imagenes/adicionales/",Date.now()+'_'+id);
+}
+const solicitudImagen = (req,res,next) =>{
+    const {documento,id} = req.params;
+    uploadFile(req,res,next,"imagenes/documentos/",Date.now()+"_"+documento+"_"+id);
+}
 //Funcion para subir una imagen
 function uploadFile(req,res,next,path,id){
     if(!req.file){
@@ -72,5 +84,5 @@ function uploadFile(req,res,next,path,id){
 };
 
 export const methods = {
-    empleadoImagen,sliderImagen,modeloImagen,vehiculoImagen
+    empleadoImagen,sliderImagen,modeloImagen,vehiculoImagen,recursosImagen,adicionalesImagen,solicitudImagen
 }

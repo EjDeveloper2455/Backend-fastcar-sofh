@@ -1,1 +1,7 @@
  npm i @babel/cli @babel/core @babel/node @babel/preset-env morgan nodemon -D
+npm install random
+
+//Correo
+
+email: alquileresfastcar55@gmail.com
+pass: EEFMK-123

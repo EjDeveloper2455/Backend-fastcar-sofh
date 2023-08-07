@@ -70,6 +70,25 @@ const getUser = async (req,res) =>{
         res.status(500).send(err.message);
     }
 };
+
+const getClienteUser = async (req,res) =>{
+    try{
+        const {usuario,correo} = req.params;
+        const connection = await getConnection();
+        const result = await connection.query("Select usuario_cliente_email as email from "+
+        "tbl_usuario_cliente where usuario_cliente_email = ?",[usuario]);
+
+        const result2 = await connection.query("Select usuario_cliente_email as email from "+
+        "tbl_usuario_cliente where usuario_correo = ?",[correo]);
+        var respuesta = {"res":"no"}
+        if(result.length > 0)respuesta.res = 'usuario';
+        else if(result2.length > 0)respuesta.res = 'correo';
+     res.json(respuesta);
+    }catch(err){
+        res.status(500).send(err.message);
+    }
+};
+
 const getUserNombre = async (req,res) =>{
     try{
         const connection = await getConnection();
@@ -102,17 +121,26 @@ const signUp = async (req,res) =>{
 
 const signUpCliente = async (req,res) =>{
     try{
-        var {email,password,rol} = req.body;
+        var {usuario,email,password,rol,nombre,telefono} = req.body;
 
         const salt = await bcrypt.genSalt(10);
         password = await bcrypt.hash(password, salt);
         const connection = await getConnection();
-        const result = await connection.query("INSERT INTO `tbl_usuario_cliente` (`usuario_cliente_email`, `usuario_cliente_password`, `usuario_cliente_rol`) VALUES (?, ?, ?); ",[email,password,rol]);
+        const result = await connection.query("INSERT INTO `tbl_usuario_cliente` (`usuario_cliente_email`,`usuario_correo`,`usuario_cliente_password`, `usuario_cliente_rol`) VALUES (?, ?, ?, ?); ",[usuario,email,password,rol]);
+        const result2 = await connection.query("INSERT INTO `tbl_cliente` (`cliente_nombre`, `cliente_email`"+
+        " ,`cliente_telefono`,`cliente_foto_dni`,`cliente_foto_licencia`) "+
+        "VALUES (?, ?, ?,'Sin foto','Sin foto'); ",[nombre,email,telefono]);
+        
+        if(result2){
+            const id = result2.insertId;
+            const result3 = await connection.query("INSERT INTO `tbl_cliente_user` (`usuario_cliente_email`, `cliente_id`) "+
+            "VALUES (?, ?); ",[usuario,id]);
+        }
         if(result){
-            const payload = {email: email.email,role: rol};
+            const payload = {usuario: usuario,email: email,role: rol};
             
             const token = jwt.sign(payload, SECRET_KEY);
-            res.json({email,rol,token});
+            res.json({email,usuario,rol,token});
         }
     }catch(err){
         console.log(err);
@@ -135,7 +163,8 @@ const login = async(req, res) =>{
         if(!isMatch){
             res.status(401).send('Credenciales incorrecta');
         }else{
-            const user = {"Email": result[0][0].email,"Rol": result[0][0].rol,"Nombre": result[0][0].nombre, "Expira": result[0][0].expiracion};
+            const user = {"Email": result[0][0].email,"Rol": result[0][0].rol,"Nombre": result[0][0].nombre,
+             "Expira": result[0][0].expiracion};
             const payload = {user};
             
             const token = jwt.sign(payload, SECRET_KEY);
@@ -162,7 +191,9 @@ const loginCliente = async(req, res) =>{
         if(!isMatch){
             res.status(401).send('Credenciales incorrecta');
         }else{
-            const user = {"Email": result[0][0].email,"Rol": result[0][0].rol,"Nombre": result[0][0].nombre, "Expira": result[0][0].expiracion};
+            const user = {"Email": result[0][0].email,"Correo": result[0][0].correo,"Rol": result[0][0].rol,
+            "id":result[0][0].ID,"Nombre": result[0][0].nombre, "Expira": result[0][0].expiracion,
+            "foto_dni":result[0][0].foto_dni,"foto_licencia":result[0][0].foto_licencia};
             const payload = {user};
             
             const token = jwt.sign(payload, SECRET_KEY);
@@ -174,7 +205,17 @@ const loginCliente = async(req, res) =>{
     }
 }
 
+const decodificarToken = async(req, res) =>{
+    try {
+        const {token} = req.params;
+        const decodedToken = jwt.verify(token, SECRET_KEY); 
+        res.json(decodedToken);
+      } catch (error) {
+        res.status(500).send('Error al decodificar el token:'+ error.message);
+      }
+}
+
 
 export const methods = {
-    signUp,getUser,login,loginCliente,signUpCliente,getUserNombre
+    signUp,getUser,login,loginCliente,signUpCliente,getUserNombre,getClienteUser,decodificarToken
 }

@@ -4,6 +4,8 @@ const router = Router();
 
 router.get("/",auth.getUser);
 router.get("/nombre",auth.getUserNombre);
+router.get("/token/:token",auth.decodificarToken);
+router.get("/cliente/:usuario/:correo",auth.getClienteUser);
 router.get("/get",(req,res) =>{
     res.send("Salida");
 });

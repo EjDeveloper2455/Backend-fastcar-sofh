@@ -13,6 +13,14 @@ import computadoraRoutes from './routes/computadora.routes';
 import coberturaRoutes from './routes/cobertura.routes';
 import cargoRoutes from './routes/cargo.routes';
 import departamentoRoutes from './routes/departamento.routes';
+import smsRoutes from './routes/sms.routes';
+import emailRoutes from './routes/email.routes';
+import recursosRoutes from './routes/recursos.routes';
+import adicionalesRoutes from './routes/adicionales.routes';
+import seguroRoutes from './routes/seguro.routes';
+import datos_reservacionRoutes from './routes/datos_reservacion.routes';
+import notificacionesRoutes from './routes/notificaciones.routes';
+import solicitudRoutes from './routes/solicitud.routes';
 
 const app = express();
 
@@ -36,6 +44,15 @@ app.use("/api/computadora/",computadoraRoutes);
 app.use("/api/cobertura/",coberturaRoutes);
 app.use("/api/cargo/",cargoRoutes);
 app.use("/api/departamento/",departamentoRoutes);
+app.use("/api/sms/",smsRoutes);
+app.use("/api/recursos/",recursosRoutes);
+app.use("/api/email/",emailRoutes);
+app.use("/api/adicionales/",adicionalesRoutes);
+app.use("/api/seguro/",seguroRoutes);
+app.use("/api/notificaciones/",notificacionesRoutes);
+app.use("/api/datos_reservacion/",datos_reservacionRoutes);
+app.use("/api/solicitud/",solicitudRoutes);
+
 app.get("/api/confirm/",(req,res)=>{
     res.send("El servidor esta corriendo");
 });
